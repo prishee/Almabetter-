@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>LeaderBoard</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  {% if Mark %}
+  <table>
+    <thead>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Marks in Maths</th>
+      <th>Marks in Chem</th>
+      <th>Marks in Phy</th>
+    </thead>
+    {% for m in Mark %}
+    <tr>
+      <td>{{ m.rollNo}}</td>
+      <td>{{ m.name}}</td>
+      <td>{{ m.marksInMaths}}</td>
+      <td>{{ m.marksInPhysics}}</td>
+      <td>{{ m.marksInChemistry}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {% else %}
+  <p>No Project Found</p>
+  {%endif%}
+</body></html>

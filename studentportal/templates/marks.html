@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <h2> Enter Marks Page </h2>
+  <div>
+  <form method="POST">
+    <table>
+      {{form.as_table}}
+      {% csrf_token %} 
+    </table>
+    <br>
+    <input type="submit" name="" value="submit">
+
+  </form>
+</div>
+</body>
+</html>

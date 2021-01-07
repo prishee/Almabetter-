@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="{% static 'css/home.css'%}">
 </head>
 <body>
   <h1>Welcome to the student portal </h1>
+  <div class="menu">
   <ul>
-    <li><a href="/marksPage">Enter Marks</a></li>
+    <li><a href="/entermarks">Enter Marks</a></li>
     <li><a href="/leaderboard">LeaderBoard</a></li>
   </ul>
+</div>
 </body>
 </html>
